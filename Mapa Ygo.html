@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x1f0cf; Mapa Mental - Como Jogar Yu-Gi-Oh! (TCG / Master Duel)","children":[{"content":"&#x1f3af; Objetivo do Jogo","children":[{"content":"Reduzir os <strong>Life Points (LP)</strong> do oponente de <strong>8000 para 0</strong>","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"Ou vencer por condi&#xe7;&#xf5;es especiais de vit&#xf3;ria","children":[],"payload":{"tag":"li","lines":"4,6"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x1f9e9; Estrutura do Deck","children":[{"content":"<strong>Main Deck (40-60 cartas)</strong>","children":[{"content":"Monstros","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"Magias (Spells)","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"Armadilhas (Traps)","children":[],"payload":{"tag":"li","lines":"12,13"}}],"payload":{"tag":"li","lines":"9,13"}},{"content":"<strong>Extra Deck (0-15 cartas)</strong>","children":[{"content":"Fus&#xe3;o (Fusion)","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"Sincro (Synchro)","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Xyz","children":[],"payload":{"tag":"li","lines":"16,17"}},{"content":"Link","children":[],"payload":{"tag":"li","lines":"17,18"}}],"payload":{"tag":"li","lines":"13,18"}},{"content":"<strong>Side Deck (opcional - at&#xe9; 15 cartas)</strong>","children":[{"content":"Usado entre duelos em partidas &quot;melhor de 3&quot;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"18,21"}}],"payload":{"tag":"h2","lines":"8,9"}},{"content":"&#x1f3b2; Tipos de Monstros","children":[{"content":"<strong>Monstros Normais</strong>","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<strong>Monstros de Efeito</strong>","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<strong>Monstros de Ritual</strong>","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"<strong>Fus&#xe3;o, Sincro, Xyz, Link</strong>","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"<strong>Pendulum</strong> (funcionam como monstros e magias)","children":[],"payload":{"tag":"li","lines":"28,30"}}],"payload":{"tag":"h2","lines":"23,24"}},{"content":"&#x1f501; Fases do Turno","children":[{"content":"1. <strong>Draw Phase</strong> - Comprar 1 carta","children":[],"payload":{"tag":"li","lines":"33,34","listIndex":1}},{"content":"2. <strong>Standby Phase</strong> - Efeitos ativados aqui","children":[],"payload":{"tag":"li","lines":"34,35","listIndex":2}},{"content":"3. <strong>Main Phase 1</strong>","children":[{"content":"Invocar monstros (Normal/Special/Summon)","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Ativar Magias/Armadilhas","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Posicionar cartas","children":[],"payload":{"tag":"li","lines":"38,39"}}],"payload":{"tag":"li","lines":"35,39","listIndex":3}},{"content":"4. <strong>Battle Phase</strong>","children":[{"content":"Atacar com monstros","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"Causar dano de batalha","children":[],"payload":{"tag":"li","lines":"41,42"}}],"payload":{"tag":"li","lines":"39,42","listIndex":4}},{"content":"5. <strong>Main Phase 2</strong>","children":[{"content":"Jogadas adicionais (como na Main 1)","children":[],"payload":{"tag":"li","lines":"43,44"}}],"payload":{"tag":"li","lines":"42,44","listIndex":5}},{"content":"6. <strong>End Phase</strong>","children":[{"content":"Ativa&#xe7;&#xe3;o de efeitos de fim de turno","children":[],"payload":{"tag":"li","lines":"45,47"}}],"payload":{"tag":"li","lines":"44,47","listIndex":6}}],"payload":{"tag":"h2","lines":"32,33"}},{"content":"&#x1f6e0;&#xfe0f; Tipos de Invoca&#xe7;&#xe3;o","children":[{"content":"<strong>Normal Summon</strong> - 1 vez por turno","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"<strong>Special Summon</strong> - Sem limite","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"<strong>Ritual Summon</strong> - Usando magia ritual","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"<strong>Fusion Summon</strong> - Por polimeriza&#xe7;&#xe3;o/fus&#xe3;o","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"<strong>Synchro Summon</strong> - Tuner + n&#xe3;o-Tuners = N&#xed;vel","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"<strong>Xyz Summon</strong> - Mesmos n&#xed;veis, sobrepostos","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"<strong>Link Summon</strong> - Usando monstros como material (sem n&#xed;vel)","children":[],"payload":{"tag":"li","lines":"56,58"}}],"payload":{"tag":"h2","lines":"49,50"}},{"content":"&#x1f3b4; Tipos de Cartas","children":[{"content":"&#x1f7e5; Monstros","children":[{"content":"Ataque / Defesa / N&#xed;vel / Efeito / Atributo","children":[],"payload":{"tag":"li","lines":"62,64"}}],"payload":{"tag":"h3","lines":"61,62"}},{"content":"&#x1f7e6; Magias (Spells)","children":[{"content":"Normal","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"Cont&#xed;nua","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"R&#xe1;pida (Quick-Play)","children":[],"payload":{"tag":"li","lines":"67,68"}},{"content":"Equipamento","children":[],"payload":{"tag":"li","lines":"68,69"}},{"content":"Campo (Field)","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"Ritual","children":[],"payload":{"tag":"li","lines":"70,72"}}],"payload":{"tag":"h3","lines":"64,65"}},{"content":"&#x1f7ea; Armadilhas (Traps)","children":[{"content":"Normal","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"Cont&#xed;nua","children":[],"payload":{"tag":"li","lines":"74,75"}},{"content":"Contra (Counter Trap)","children":[],"payload":{"tag":"li","lines":"75,77"}}],"payload":{"tag":"h3","lines":"72,73"}}],"payload":{"tag":"h2","lines":"60,61"}},{"content":"&#x1f51d; Regras Modernas (Master Rule 5)","children":[{"content":"<strong>Link Zones</strong> (zones extras para invoca&#xe7;&#xf5;es do Extra Deck)","children":[],"payload":{"tag":"li","lines":"80,81"}},{"content":"<strong>Extra Deck Monsters</strong> (s&#xf3; podem ser invocados em zonas de Link ou Extra Monster Zone)","children":[],"payload":{"tag":"li","lines":"81,82"}},{"content":"<strong>Pendulum Zones</strong> agora compartilham espa&#xe7;o com zonas de magia","children":[],"payload":{"tag":"li","lines":"82,84"}}],"payload":{"tag":"h2","lines":"79,80"}},{"content":"&#x1f3ae; Estrat&#xe9;gia B&#xe1;sica","children":[{"content":"Controle o campo com efeitos","children":[],"payload":{"tag":"li","lines":"87,88"}},{"content":"Administre recursos entre m&#xe3;o/campo/cemit&#xe9;rio","children":[],"payload":{"tag":"li","lines":"88,89"}},{"content":"Conhe&#xe7;a combos do seu deck","children":[],"payload":{"tag":"li","lines":"89,90"}},{"content":"Use o Extra Deck de forma eficiente","children":[],"payload":{"tag":"li","lines":"90,92"}}],"payload":{"tag":"h2","lines":"86,87"}},{"content":"&#x1f4da; Termos Importantes","children":[{"content":"<strong>OTK</strong>: Vencer em 1 turno","children":[],"payload":{"tag":"li","lines":"95,96"}},{"content":"<strong>FTK</strong>: Vencer no 1&#xba; turno do jogo","children":[],"payload":{"tag":"li","lines":"96,97"}},{"content":"<strong>Meta</strong>: Melhores decks da temporada","children":[],"payload":{"tag":"li","lines":"97,98"}},{"content":"<strong>Brickar</strong>: Comprar uma m&#xe3;o ruim","children":[],"payload":{"tag":"li","lines":"98,99"}},{"content":"<strong>Floodgate</strong>: Carta que limita a&#xe7;&#xf5;es do oponente","children":[],"payload":{"tag":"li","lines":"99,101"}}],"payload":{"tag":"h2","lines":"94,95"}},{"content":"&#x1f310; Plataformas","children":[{"content":"<strong>Master Duel</strong> (digital)","children":[],"payload":{"tag":"li","lines":"104,105"}},{"content":"<strong>Duel Links</strong> (mobile, simplificado)","children":[],"payload":{"tag":"li","lines":"105,106"}},{"content":"<strong>TCG F&#xed;sico</strong>","children":[],"payload":{"tag":"li","lines":"106,108"}}],"payload":{"tag":"h2","lines":"103,104"}},{"content":"&#x1f9e0; Dicas Finais","children":[{"content":"Estude seu deck e pratique combos","children":[],"payload":{"tag":"li","lines":"111,112"}},{"content":"Aprenda o timing de cartas (respostas em corrente)","children":[],"payload":{"tag":"li","lines":"112,113"}},{"content":"Leia os efeitos com aten&#xe7;&#xe3;o (custo &#x2260; condi&#xe7;&#xe3;o)","children":[],"payload":{"tag":"li","lines":"113,114"}}],"payload":{"tag":"h2","lines":"110,111"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
